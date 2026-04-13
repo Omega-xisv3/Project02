@@ -3,17 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Italian Family Pizza</title>
     <link rel="stylesheet" href="w12.css">
 </head>
 <body>
     <div class="container">
-        <header class="header">Header</header>
-        <nav class="nav">Nav</nav>
-        <main class="main">Main</main>
-        <article class="article">Article</article>
-        <section class="section">Section</section>
-        <footer class="footer">Footer</footer>
+        <header class="header">
+        <h1>Italian Family Pizza</h1>
+        </header>
+        <div class="menu"><h3>Business Information:</h3><br><p>Name: Italian Family Pizza</p><br><p>Phone: (215) 801-5198</p><br><p>Address: 1701 Benjamin Franklin Pkwy, Philadelphia, PA 19103</p></div>
+        <div class="content"><h2>Menu:</h2>
+            <p>Cheese Pizza: $15.38+ <br><img src="cheese.jpg" alt="Cheese Pizza"></p> 
+            <p>Tomato Pie Pizza: $15.38 <br><img src="pie.jpg" alt="Tomato Pie Pizza"></p>
+            <p>Margherita Pizza: $18.46+. <br><img src="mar.jpg" alt="Margherita Pizza"></p> 
+            <p>White Pie Pizza: $16.00 <br><img src="white.jpg" alt="White Pie Pizza"></p> 
+            <p>The Meatball Pizza: $18.46 <br><img src="meat.jpg" alt="Meatball Pizza"></p> 
+            <p>The Silican Pizza: $30.76</p><br><img src="sil.jpg" alt="Silican Pizza">
+            <p>Toppings: Pepperoni, Mushrooms, Olives.</p> 
+            <p>Below is an example <br><img src="toppings.jpg" alt="Pizza with Toppings"></p>
+        </div>
+            
+            
+     <div class="facts">
+            <h2>Order Form:</h2>
+            <p>Please fill out the form below to complete your order:</p>
+           <form 
+           action="https://formspree.io/f/mkoknkvo"
+           method="POST"
+           >
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+
+            
+            <label for="address"> Delivery Address</label>
+            <input type="text" id="address" name="address" placeholder="Put in Your Address">
+
+            <label for="pizza">Pizza</label>
+            <select id="pizza" name="pizza">
+            <option value="cheese">Cheese Pizza</option>
+            <option value="tomato">Tomato Pie Pizza</option>
+            <option value="margherita">Margherita Pizza</option>
+            <option value="white">White Pie Pizza</option>
+            <option value="meatball">The Meatball Pizza</option>
+            <option value="silican">The Silican Pizza</option>
+
+            </select>
+  
+            <input type="submit" value="Submit">
+            </form>
+
+        </div>
+        <div class="footer"><h4>My GitHub Profile</h4><a href="https://github.com/Omega-xisv3">GitHub</a></div>
     </div>
 </body>
 </html>

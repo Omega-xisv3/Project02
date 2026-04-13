@@ -1,52 +1,191 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 body {
-    background-color: #a4133c;
-
+  background-color: oldlace;
 }
+p{
+    margin: 0;
+    color:rgb(58, 54, 51);
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    color: rgb(58, 54, 51);
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h3 {
+    color: rgb(58, 54, 51);
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .container {
-    display: grid;
-    grid-template-areas:
-        "header header header header"
-        "section nav main article"
-        "footer footer footer footer";
-    grid-template-columns: 1fr 3fr 2fr 1fr;
-    gap: 10px;
-    background-color: #1a1a1a;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'menu'
+    'main'
+    'facts'
+    'footer';
+  background-color: goldenrod;
+  gap: 10px;  
 }
 
-header {
-    grid-area: header;
-    background-color: lightseagreen;
-    padding: 20px;
-    text-align: center;
-}
-nav {
-    grid-area: nav;
-    background-color: lightgray;
-    padding: 20px;
-}
-main {
-    grid-area: main;
-    background-color: lightyellow;
-    padding: 20px;
-}
-sidebar {
-    grid-area: sidebar;
-    background-color: lightblue;
-    padding: 20px;
+.header {
+  grid-area: header;
+  background-color: peachpuff;
+  text-align: center;
+  color: #ffffff;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+
 }
 
-section {
-    grid-area: section;
-    background-color: lightgreen;
-    padding: 20px;
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-footer {
-    grid-area: footer;
-    background-color: lightcoral;
-    padding: 20px;
-    text-align: center;
+
+option{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+select{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header > h1 {
+  font-size: 40px;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: bisque;
+  }
+  
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+  
+.content {
+  grid-area: main;
+  background-color: tomato;
+}
+
+.content > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.content > p {
+  margin-bottom: 7px;
+}
+
+.facts {
+  grid-area: facts;
+  border: 1px solid #0099cc;
+  background-color: beige;
+  padding: 10px;
+}
+
+.facts > h2 {
+  font-size: 20px;
+}
+
+.facts li {
+  margin-bottom: 5px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #166847;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 3 / span 6;}
+  .footer {grid-area: 4 / span 6;}
+}
+
+@media (min-width: 768px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
+
+form {
+  border-radius: 5px;
+  background-color: beige;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select:hover {
+  border: 1px solid #0099cc;
+}
+input[type=text]:hover {
+  color: #0099cc;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+a{
+    color: tomato;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
 }
