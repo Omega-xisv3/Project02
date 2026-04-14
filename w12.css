@@ -14,20 +14,20 @@ p{
     margin: 0;
     color:rgb(58, 54, 51);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: oblique;
+    
     font-weight: normal;
 }
 
 h2 {
     color: rgb(58, 54, 51);
     font-style: italic;
-    font-weight: bold;
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h3 {
     color: rgb(58, 54, 51);
     font-style: italic;
-    font-weight: bold;
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -41,6 +41,7 @@ h3 {
     'footer';
   background-color: goldenrod;
   gap: 10px;  
+  border-color: goldenrod;
 }
 
 .header {
@@ -79,7 +80,7 @@ select{
 .menu li {
   padding: 8px;
   margin-bottom: 7px;
-  background-color: #33b5e5;
+  
   color: #ffffff;
 }
 
@@ -103,7 +104,7 @@ select{
 
 .facts {
   grid-area: facts;
-  border: 1px solid #0099cc;
+  
   background-color: beige;
   padding: 10px;
 }
@@ -143,12 +144,10 @@ form {
   border-radius: 5px;
   background-color: beige;
   padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-label {display: block;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-style: oblique;
-}
+
 
 input[type=text], select {
   width: 100%;
@@ -158,6 +157,7 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 select:hover {
@@ -176,7 +176,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: oblique;
+  
 }
 
 input[type=submit]:hover {
@@ -185,16 +185,18 @@ input[type=submit]:hover {
 }
 
 h1{
+    font-style: italic;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h4{
+    font-style: italic;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 a{
     color: tomato;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: oblique;
+    
 }
 
 a:hover {
