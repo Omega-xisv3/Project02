@@ -3,8 +3,10 @@
 }
 
 img {
+  display: block;
   width: 100%;
   height: auto;
+
 }
 
 body {
@@ -33,15 +35,16 @@ h3 {
 
 .container {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
-    'header'
-    'menu'
-    'main'
-    'facts'
-    'footer';
+    'header header header header header header'
+    'menu menu menu menu menu menu'
+    'main main main main main main'
+    'facts facts facts facts facts facts'
+    'footer footer footer footer footer footer';
   background-color: goldenrod;
   gap: 10px;  
-  border-color: goldenrod;
+  
 }
 
 .header {
